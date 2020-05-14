@@ -1,7 +1,7 @@
 ---
 title: E-Commerce Website Database Design Project  
-author: 2216349 Tuan Susam -
-        Ilgaz Cakar 2008035  
+author: Tuan Susam -
+        Ilgaz Cakar
 date: 06 May, 2020  
 ---
 
