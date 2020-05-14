@@ -52,12 +52,15 @@ date: 06 May, 2020
 
 ```
 Create types
-CREATE TYPE sex AS ENUM ('M', 'F', 'O');
-CREATE TYPE rma_type AS ENUM ('A','B','C','D','E','BCDE')
+CREATE TYPE sex AS ENUM ('M', 'F', 'O'); -- Male, Female, Others
+CREATE TYPE rma_type AS ENUM ('A','B','C','D','E','BCDE');
+CREATE TYPE ord_met AS ENUM ('CC','DC');        -- Credit Card, Debit Card
+CREATE TYPE inv_stat AS ENUM ('A','S','C','R');      -- Awaiting, Shipped, Cancelled, Rewised
+CREATE TYPE ship_stat AS ENUM ('A','P','T','D','R'); -- Awaiting, Processing, in Transit, Delivered, Returned
+CREATE TYPE pay_stat AS ENUM ('P','S','C','R');      -- Pending Success Cancelled Rejected
+CREATE TYPE ord_stat AS ENUM ('AP','OH','OR','OP','AS','S','D','C','R'); -- Awaiting Payment, On Hold, Order Received, Order Packed, Awaiting Shipment, Shipped, Delivered, Cancelled, Refunded
 ```
-
-- **Sex** data type is defined to encode the information.
-
+ 
 - **Rma_type** is created for _Return Merchandise Authorization_ policies, defining 6 different ways of returning a product to receive a refund, replacement, or repair during the product's warranty period. Both parties can issue a return process.
 
 ![Return Material Authorization Types Chart](img/rma_types.png)
