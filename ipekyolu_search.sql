@@ -16,3 +16,8 @@ SELECT ps."product_id", SUM(ps."product_stock") total_stock
 FROM "Product_Supplier" ps
 GROUP BY ps."product_id"
 
+-- revise
+select amount
+from price_history 
+where product_id = X and option_id = Y 
+and date_from <= NOW() and NOW() <= date_to;
